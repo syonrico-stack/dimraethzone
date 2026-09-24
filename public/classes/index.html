@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimraeth Classes Guide: Brawler, Shadow & Magician Explained (EA)</title>
+<meta name="description" content="All three Dimraeth Early Access classes explained — Brawler, Shadow and Magician — what each one decides, how race transforms it, and which fits your playstyle.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://dimraethzone.com/classes/">
+<meta property="og:title" content="Dimraeth Classes Guide: Brawler, Shadow & Magician Explained (EA)">
+<meta property="og:description" content="All three Dimraeth Early Access classes explained — Brawler, Shadow and Magician — what each one decides, how race transforms it, and which fits your playstyle.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dimraethzone.com/classes/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many classes are in Dimraeth?","acceptedAnswer":{"@type":"Answer","text":"Three in Early Access: Brawler, Shadow and Magician. Mudtek's 1.0 plan lists six classes. Combined with races, each class produces a distinct named archetype."}},{"@type":"Question","name":"Is Mage a separate class from Magician?","acceptedAnswer":{"@type":"Answer","text":"No. 'Mage' is older Early Access wording for the Magician — there is no fourth class."}},{"@type":"Question","name":"Can I change my class later in Dimraeth?","acceptedAnswer":{"@type":"Answer","text":"Not in the current Early Access build — race, class and appearance are locked at creation. You can, however, respec skills and learn out-of-class abilities from spellbooks."}}]}</script>
+<style>
+:root{--bg:#12101a;--bg2:#1a1726;--card:#1f1b2e;--line:#322b47;--text:#e8e4f3;--muted:#a49dbf;--accent:#a78bfa;--accent2:#fbbf24;--green:#34d399}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.7;font-size:16px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.top{background:var(--bg2);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:.5px}
+.logo b{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:14px;transition:color .2s}
+nav a:hover{color:var(--accent)}
+.crumb{font-size:13px;color:var(--muted);padding:14px 0 0}
+.crumb a{color:var(--accent);text-decoration:none}
+.hero{padding:34px 0 8px}
+.hero h1{font-size:34px;line-height:1.25;margin-bottom:12px}
+.hero h1 em{color:var(--accent);font-style:normal}
+.hero p.lead{font-size:17px;color:var(--muted);max-width:760px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.badge{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:12.5px;color:var(--muted)}
+.badge b{color:var(--accent2);font-weight:600}
+.quick{background:linear-gradient(135deg,#221d33,#1a1726);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:20px 22px;margin:26px 0}
+.quick h2{font-size:16px;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+.quick p{font-size:15.5px}
+section.block{margin:34px 0}
+section.block h2{font-size:24px;margin-bottom:12px;padding-left:12px;border-left:4px solid var(--accent)}
+section.block h3{font-size:18px;margin:20px 0 8px;color:var(--accent2)}
+section.block p,section.block li{color:#cfc9e0;font-size:15.5px}
+section.block ul,section.block ol{padding-left:22px}
+section.block li{margin-bottom:6px}
+table.dt{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;display:block;overflow-x:auto}
+table.dt tbody{display:table;width:100%;min-width:520px}
+table.dt th{background:var(--bg2);color:var(--accent);text-align:left;padding:10px 12px;border:1px solid var(--line)}
+table.dt td{padding:10px 12px;border:1px solid var(--line);color:#cfc9e0;vertical-align:top}
+table.dt tr:nth-child(even) td{background:#191523}
+.note{background:#241d16;border:1px solid #4a3b22;border-left:4px solid var(--accent2);border-radius:10px;padding:14px 18px;margin:18px 0;font-size:14.5px;color:#e6d9bd}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:20px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;text-decoration:none;transition:transform .15s,border-color .15s;display:block}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card h3{color:var(--text);font-size:16.5px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:13.5px;line-height:1.55}
+.card .go{color:var(--accent);font-size:12.5px;margin-top:8px;display:inline-block}
+.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;border:1px solid var(--line);margin:22px 0}
+.video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:0}
+.faq summary{cursor:pointer;padding:14px 18px;font-weight:600;font-size:15.5px;list-style:none}
+.faq summary::before{content:'+';color:var(--accent);margin-right:10px;font-weight:800}
+.faq details[open] summary::before{content:'−'}
+.faq details .a{padding:0 18px 16px;color:#cfc9e0;font-size:15px}
+.morelist{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.morelist a{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:8px 14px;color:var(--muted);text-decoration:none;font-size:13.5px}
+.morelist a:hover{color:var(--accent);border-color:var(--accent)}
+footer{margin-top:60px;background:var(--bg2);border-top:1px solid var(--line);padding:30px 0 40px}
+footer p{color:var(--muted);font-size:13px;margin-bottom:6px}
+footer a{color:var(--muted);margin-right:16px;font-size:13px}
+footer a:hover{color:var(--accent)}
+@media (max-width:640px){
+header.top .wrap{flex-wrap:wrap;height:auto;padding:10px 20px;row-gap:6px}
+.logo{font-size:17px}
+nav{width:100%;display:flex;gap:16px;flex-wrap:wrap}
+nav a{margin-left:0;font-size:13px}
+.hero h1{font-size:26px}
+section.block h2{font-size:20px}
+table.dt{font-size:13px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="/">Dimraeth<b>Zone</b></a>
+<nav><a href="/classes/">Classes</a><a href="/races/">Races</a><a href="/best-class/">Best Class</a><a href="/pets/">Pets</a><a href="/map/">Map</a><a href="/builds/">Builds</a></nav>
+</div></header>
+<main class="wrap">
+<div class="crumb"><a href="/">Home</a> &rsaquo; Classes</div>
+<div class="hero">
+<h1>Dimraeth Classes: <em>Brawler, Shadow &amp; Magician</em> Explained</h1>
+<p class="lead">Early Access ships with three classes. The catch: your class is only half of your character — your race transforms it into a named archetype with different weapons, stats and passives.</p>
+<div class="badges"><span class="badge">EA classes: <b>3</b></span><span class="badge">Planned at 1.0: <b>6</b></span><span class="badge">Respec: <b>available</b></span></div>
+</div>
+
+<div class="quick">
+<h2>Quick answer</h2>
+<p>Pick <b>Brawler</b> for dependable melee, <b>Shadow</b> for mobility and burst, <b>Magician</b> for elemental spells and hybrids. Then choose your race carefully — a Human Magician (Elemental Ranger) and a Minotaur Magician (Earthshaker) play almost nothing alike. The full combinations are in our <a href="/best-class/" style="color:var(--accent)">archetype table</a>.</p>
+</div>
+
+<section class="block">
+<h2>The three Early Access classes</h2>
+<h3>Brawler — direct, close-range force</h3>
+<p>The Brawler is built for players who want to stand their ground. It opens with foundational physical attacks like Quick Jab and race-specific power moves. Paired with Minotaur it becomes a traditional frontline bruiser with heavy abilities such as Boulder Toss; paired with Human it becomes an adaptable weapon master swapping between sword and crossbow.</p>
+<ul>
+<li><b>Playstyle:</b> melee pressure, stagger, Rage and Bleed interactions</li>
+<li><b>Best for:</b> first runs, players who dislike kiting</li>
+<li><b>Watch out:</b> fewer escape tools than Shadow — positioning is your defense</li>
+</ul>
+<h3>Shadow — mobility, timing, burst</h3>
+<p>The Shadow trades brute force for movement: dodge windows, stealth, and utility like leaving behind a shadow clone. As an Elf it wields twin daggers for fast attack strings and critical strikes from off-angles.</p>
+<ul>
+<li><b>Playstyle:</b> hit-and-run, status effects, repositioning</li>
+<li><b>Best for:</b> players who enjoy active, high-APM combat</li>
+<li><b>Watch out:</b> thin area coverage — crowded fights demand good footwork</li>
+</ul>
+<h3>Magician — elemental artillery &amp; hybrids</h3>
+<p>The Magician centers on elemental damage — Fire, Ice, Electricity, Decay and Ether among the schools — and Intelligence scaling. It is the most shape-shifting class: Human turns it into a sword-and-crossbow spellsword, while Minotaur turns it into a battle-axe Earth caster. You may also see it called "Mage" in older posts — same class.</p>
+<ul>
+<li><b>Playstyle:</b> ranged spells, elemental combos, 5-slot spell loadouts</li>
+<li><b>Best for:</b> players who like planning builds and rotations</li>
+<li><b>Watch out:</b> more systems to learn; attribute requirements on spellbooks</li>
+</ul>
+</section>
+
+<section class="block">
+<h2>Class is a starting point, not a cage</h2>
+<p>Beyond the opening hours you can find spellbooks and unlock skills from outside your starting class, so hybrids emerge naturally. Your class still matters — it sets your starting kit, your skill tree layout and how much XP each attribute costs — but the endgame build is yours to shape. Details in our <a href="/builds/" style="color:var(--accent)">build guide</a>.</p>
+<div class="note"><b>Heads up:</b> as of the Early Access launch build, you cannot change your race, class or appearance after creation. Test on a throwaway character if you are unsure, and check our <a href="/best-class/" style="color:var(--accent)">best class guide</a> before committing.</div>
+</section>
+<section class="block faq"><h2>FAQ</h2><details><summary>How many classes are in Dimraeth?</summary><div class='a'>Three in Early Access: Brawler, Shadow and Magician. Mudtek's 1.0 plan lists six classes. Combined with races, each class produces a distinct named archetype.</div></details><details><summary>Is Mage a separate class from Magician?</summary><div class='a'>No. 'Mage' is older Early Access wording for the Magician — there is no fourth class.</div></details><details><summary>Can I change my class later in Dimraeth?</summary><div class='a'>Not in the current Early Access build — race, class and appearance are locked at creation. You can, however, respec skills and learn out-of-class abilities from spellbooks.</div></details></section><section class="block"><h2>Keep Reading</h2><div class="morelist"><a href="/races/">Races</a><a href="/best-class/">Best Class</a><a href="/pets/">Pets</a><a href="/map/">Map</a><a href="/builds/">Builds</a><a href="/max-level/">Max Level</a><a href="/co-op/">Co-op</a><a href="/release-date/">Roadmap</a></div></section>
+</main>
+<footer><div class="wrap">
+<p><a href="/privacy/">Privacy Policy</a><a href="/about/">About</a><a href="https://store.steampowered.com/search/?term=Dimraeth" rel="nofollow noopener" target="_blank">Dimraeth on Steam</a></p>
+<p>DimraethZone is an unofficial fan-made guide site. Not affiliated with or endorsed by Mudtek. Dimraeth and all related marks are trademarks of their respective owners.</p>
+<p>&copy; 2026 dimraethzone.com</p>
+</div></footer>
+</body>
+</html>

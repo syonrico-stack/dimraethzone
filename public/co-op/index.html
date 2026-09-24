@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimraeth Co-op Guide: 1–8 Player Multiplayer, Saves & Servers</title>
+<meta name="description" content="How Dimraeth co-op works: 1–8 player drop-in multiplayer, split-persistence saves (character vs world progress), host settings, dedicated servers and no split-screen.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://dimraethzone.com/co-op/">
+<meta property="og:title" content="Dimraeth Co-op Guide: 1–8 Player Multiplayer, Saves & Servers">
+<meta property="og:description" content="How Dimraeth co-op works: 1–8 player drop-in multiplayer, split-persistence saves (character vs world progress), host settings, dedicated servers and no split-screen.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dimraethzone.com/co-op/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Dimraeth multiplayer?","acceptedAnswer":{"@type":"Answer","text":"Yes — online co-op for 1–8 players with drop-in/drop-out. The full game is also completable solo."}},{"@type":"Question","name":"How do saves work in Dimraeth co-op?","acceptedAnswer":{"@type":"Answer","text":"Split persistence: your character's level, gear and skills are stored with you and travel between worlds; world and quest progress belong to the host's save."}},{"@type":"Question","name":"Does Dimraeth have split-screen or dedicated servers?","acceptedAnswer":{"@type":"Answer","text":"No split-screen — co-op is online only. Dedicated servers are available through third-party hosting providers for persistent worlds."}}]}</script>
+<style>
+:root{--bg:#12101a;--bg2:#1a1726;--card:#1f1b2e;--line:#322b47;--text:#e8e4f3;--muted:#a49dbf;--accent:#a78bfa;--accent2:#fbbf24;--green:#34d399}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.7;font-size:16px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.top{background:var(--bg2);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:.5px}
+.logo b{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:14px;transition:color .2s}
+nav a:hover{color:var(--accent)}
+.crumb{font-size:13px;color:var(--muted);padding:14px 0 0}
+.crumb a{color:var(--accent);text-decoration:none}
+.hero{padding:34px 0 8px}
+.hero h1{font-size:34px;line-height:1.25;margin-bottom:12px}
+.hero h1 em{color:var(--accent);font-style:normal}
+.hero p.lead{font-size:17px;color:var(--muted);max-width:760px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.badge{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:12.5px;color:var(--muted)}
+.badge b{color:var(--accent2);font-weight:600}
+.quick{background:linear-gradient(135deg,#221d33,#1a1726);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:20px 22px;margin:26px 0}
+.quick h2{font-size:16px;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+.quick p{font-size:15.5px}
+section.block{margin:34px 0}
+section.block h2{font-size:24px;margin-bottom:12px;padding-left:12px;border-left:4px solid var(--accent)}
+section.block h3{font-size:18px;margin:20px 0 8px;color:var(--accent2)}
+section.block p,section.block li{color:#cfc9e0;font-size:15.5px}
+section.block ul,section.block ol{padding-left:22px}
+section.block li{margin-bottom:6px}
+table.dt{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;display:block;overflow-x:auto}
+table.dt tbody{display:table;width:100%;min-width:520px}
+table.dt th{background:var(--bg2);color:var(--accent);text-align:left;padding:10px 12px;border:1px solid var(--line)}
+table.dt td{padding:10px 12px;border:1px solid var(--line);color:#cfc9e0;vertical-align:top}
+table.dt tr:nth-child(even) td{background:#191523}
+.note{background:#241d16;border:1px solid #4a3b22;border-left:4px solid var(--accent2);border-radius:10px;padding:14px 18px;margin:18px 0;font-size:14.5px;color:#e6d9bd}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:20px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;text-decoration:none;transition:transform .15s,border-color .15s;display:block}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card h3{color:var(--text);font-size:16.5px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:13.5px;line-height:1.55}
+.card .go{color:var(--accent);font-size:12.5px;margin-top:8px;display:inline-block}
+.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;border:1px solid var(--line);margin:22px 0}
+.video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:0}
+.faq summary{cursor:pointer;padding:14px 18px;font-weight:600;font-size:15.5px;list-style:none}
+.faq summary::before{content:'+';color:var(--accent);margin-right:10px;font-weight:800}
+.faq details[open] summary::before{content:'−'}
+.faq details .a{padding:0 18px 16px;color:#cfc9e0;font-size:15px}
+.morelist{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.morelist a{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:8px 14px;color:var(--muted);text-decoration:none;font-size:13.5px}
+.morelist a:hover{color:var(--accent);border-color:var(--accent)}
+footer{margin-top:60px;background:var(--bg2);border-top:1px solid var(--line);padding:30px 0 40px}
+footer p{color:var(--muted);font-size:13px;margin-bottom:6px}
+footer a{color:var(--muted);margin-right:16px;font-size:13px}
+footer a:hover{color:var(--accent)}
+@media (max-width:640px){
+header.top .wrap{flex-wrap:wrap;height:auto;padding:10px 20px;row-gap:6px}
+.logo{font-size:17px}
+nav{width:100%;display:flex;gap:16px;flex-wrap:wrap}
+nav a{margin-left:0;font-size:13px}
+.hero h1{font-size:26px}
+section.block h2{font-size:20px}
+table.dt{font-size:13px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="/">Dimraeth<b>Zone</b></a>
+<nav><a href="/classes/">Classes</a><a href="/races/">Races</a><a href="/best-class/">Best Class</a><a href="/pets/">Pets</a><a href="/map/">Map</a><a href="/builds/">Builds</a></nav>
+</div></header>
+<main class="wrap">
+<div class="crumb"><a href="/">Home</a> &rsaquo; Co-op Guide</div>
+<div class="hero">
+<h1>Dimraeth Co-op: <em>1–8 Players</em>, Saves &amp; Servers Explained</h1>
+<p class="lead">Dimraeth is built to be played together — drop-in co-op for up to eight, with a save system designed so your character progress is never hostage to a friend's world.</p>
+<div class="badges"><span class="badge">Players: <b>1–8 online</b></span><span class="badge">Drop-in: <b>yes</b></span><span class="badge">Split-screen: <b>no</b></span><span class="badge">Dedicated servers: <b>via providers</b></span></div>
+</div>
+
+<div class="quick">
+<h2>Quick answer</h2>
+<p>Dimraeth supports solo play and online co-op for <b>1–8 players</b> with drop-in/drop-out. It uses <b>split-persistence saves</b>: your character (level, gear, skills) is stored with you and travels between worlds, while world state (quests, map progress) belongs to the host's save. There is no local split-screen; dedicated servers are available through third-party hosts.</p>
+</div>
+
+<section class="block">
+<h2>How co-op works</h2>
+<ul>
+<li><b>Squad size:</b> 1–8 players online. The whole game is completable solo; co-op simply changes the tactics</li>
+<li><b>Drop-in/drop-out:</b> friends can join a running world without a lobby restart</li>
+<li><b>Split persistence:</b> character progress follows the player; world progress follows the host. Spend an evening in a friend's Mirkea and your hero comes home stronger — their world keeps its own story state</li>
+<li><b>Host settings:</b> world name, difficulty, friendly fire and personal-loot toggles, password locks</li>
+<li><b>Split-screen:</b> not supported — co-op is online only</li>
+</ul>
+<h3>Dedicated servers</h3>
+<p>Don't want the world to sleep when the host logs off? Third-party providers already rent Dimraeth servers with 2–8 slots, 24/7 uptime, control panels and automatic backups. Handy for persistent guild worlds; unnecessary for casual sessions where host-and-play works fine.</p>
+</section>
+
+<section class="block">
+<h2>Making an 8-player party work</h2>
+<p>Eight heroes is chaos unless you assign jobs. A reliable template: one <b>Horned Vanguard</b> holds the front, one or two casters (<b>Echo Weaver</b>, <b>Elemental Ranger</b>) control the field, a <b>Shadow</b> assassinates priority targets, and everyone else's <a href="/pets/" style="color:var(--accent)">pets</a> add free status effects. Duplicate archetypes are fine — two Earthshakers can split "spread fire" and "detonate fire" duties. Build synergies are covered in the <a href="/builds/" style="color:var(--accent)">build guide</a>.</p>
+<div class="note"><b>Etiquette that saves friendships:</b> agree before starting whether loot is personal or shared, and let the host's world story advance at the host's pace — your character keeps everything either way.</div>
+</section>
+<section class="block faq"><h2>FAQ</h2><details><summary>Is Dimraeth multiplayer?</summary><div class='a'>Yes — online co-op for 1–8 players with drop-in/drop-out. The full game is also completable solo.</div></details><details><summary>How do saves work in Dimraeth co-op?</summary><div class='a'>Split persistence: your character's level, gear and skills are stored with you and travel between worlds; world and quest progress belong to the host's save.</div></details><details><summary>Does Dimraeth have split-screen or dedicated servers?</summary><div class='a'>No split-screen — co-op is online only. Dedicated servers are available through third-party hosting providers for persistent worlds.</div></details></section><section class="block"><h2>Keep Reading</h2><div class="morelist"><a href="/classes/">Classes</a><a href="/races/">Races</a><a href="/best-class/">Best Class</a><a href="/pets/">Pets</a><a href="/map/">Map</a><a href="/builds/">Builds</a><a href="/max-level/">Max Level</a><a href="/release-date/">Roadmap</a></div></section>
+</main>
+<footer><div class="wrap">
+<p><a href="/privacy/">Privacy Policy</a><a href="/about/">About</a><a href="https://store.steampowered.com/search/?term=Dimraeth" rel="nofollow noopener" target="_blank">Dimraeth on Steam</a></p>
+<p>DimraethZone is an unofficial fan-made guide site. Not affiliated with or endorsed by Mudtek. Dimraeth and all related marks are trademarks of their respective owners.</p>
+<p>&copy; 2026 dimraethzone.com</p>
+</div></footer>
+</body>
+</html>
