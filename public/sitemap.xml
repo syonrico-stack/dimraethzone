@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://dimraethzone.com/</loc><lastmod>2026-09-24</lastmod><priority>1.0</priority></url>
-<url><loc>https://dimraethzone.com/about/</loc><lastmod>2026-09-24</lastmod><priority>0.5</priority></url>
-<url><loc>https://dimraethzone.com/best-class/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/builds/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/classes/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/co-op/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/map/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/max-level/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/pets/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/privacy/</loc><lastmod>2026-09-24</lastmod><priority>0.5</priority></url>
-<url><loc>https://dimraethzone.com/races/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
-<url><loc>https://dimraethzone.com/release-date/</loc><lastmod>2026-09-24</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/</loc><lastmod>2026-09-26</lastmod><priority>1.0</priority></url>
+<url><loc>https://dimraethzone.com/classes/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/races/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/best-class/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/pets/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/spells/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/beginner-guide/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/map/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/builds/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/crafting/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/mods/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/platforms/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/dedicated-server/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/max-level/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/co-op/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/release-date/</loc><lastmod>2026-09-26</lastmod><priority>0.8</priority></url>
+<url><loc>https://dimraethzone.com/privacy/</loc><lastmod>2026-09-26</lastmod><priority>0.5</priority></url>
+<url><loc>https://dimraethzone.com/about/</loc><lastmod>2026-09-26</lastmod><priority>0.5</priority></url>
 </urlset>

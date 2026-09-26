@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimraeth Crafting Guide: Stations, Recipes & Salvaging (EA)</title>
+<meta name="description" content="Dimraeth crafting explained: the 4-station system, 48 documented recipes, forge salvaging, Pinewood Planks and what to craft first — system-level guide that survives patches.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://dimraethzone.com/crafting/">
+<meta property="og:title" content="Dimraeth Crafting Guide: Stations, Recipes & Salvaging (EA)">
+<meta property="og:description" content="Dimraeth crafting explained: the 4-station system, 48 documented recipes, forge salvaging, Pinewood Planks and what to craft first — system-level guide that survives patches.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dimraethzone.com/crafting/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1PJBE6MSNR"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-1PJBE6MSNR');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does crafting work in Dimraeth?", "acceptedAnswer": {"@type": "Answer", "text": "Gather materials in the world, salvage old gear at the forge, then craft at four stations. Community records document 48 recipes in Early Access. Crafted materials also feed the stronghold base-building system."}}, {"@type": "Question", "name": "Should I sell or salvage old gear in Dimraeth?", "acceptedAnswer": {"@type": "Answer", "text": "Salvage it at the forge. Salvaging converts outdated gear into crafting materials you'll need for your next tier — gold is easier to come by than materials."}}, {"@type": "Question", "name": "What is the first crafting bottleneck in Dimraeth?", "acceptedAnswer": {"@type": "Answer", "text": "Pinewood Planks. Players consistently report them as the first material gate for early stronghold upgrades — they're processed in the Farmlands region, so stock up early."}}, {"@type": "Question", "name": "How many crafting recipes are in Dimraeth?", "acceptedAnswer": {"@type": "Answer", "text": "Community records document 48 recipes across four crafting stations in Early Access, with more expected as EA content patches land."}}]}</script>
+<style>
+:root{--bg:#12101a;--bg2:#1a1726;--card:#1f1b2e;--line:#322b47;--text:#e8e4f3;--muted:#a49dbf;--accent:#a78bfa;--accent2:#fbbf24;--green:#34d399}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.7;font-size:16px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.top{background:var(--bg2);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-size:20px;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:.5px}
+.logo b{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:14px;transition:color .2s}
+nav a:hover{color:var(--accent)}
+.crumb{font-size:13px;color:var(--muted);padding:14px 0 0}
+.crumb a{color:var(--accent);text-decoration:none}
+.hero{padding:34px 0 8px}
+.hero h1{font-size:34px;line-height:1.25;margin-bottom:12px}
+.hero h1 em{color:var(--accent);font-style:normal}
+.hero p.lead{font-size:17px;color:var(--muted);max-width:760px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.badge{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:12.5px;color:var(--muted)}
+.badge b{color:var(--accent2);font-weight:600}
+.quick{background:linear-gradient(135deg,#221d33,#1a1726);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:12px;padding:20px 22px;margin:26px 0}
+.quick h2{font-size:16px;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
+.quick p{font-size:15.5px}
+section.block{margin:34px 0}
+section.block h2{font-size:24px;margin-bottom:12px;padding-left:12px;border-left:4px solid var(--accent)}
+section.block h3{font-size:18px;margin:20px 0 8px;color:var(--accent2)}
+section.block p,section.block li{color:#cfc9e0;font-size:15.5px}
+section.block ul,section.block ol{padding-left:22px}
+section.block li{margin-bottom:6px}
+table.dt{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;display:block;overflow-x:auto}
+table.dt tbody{display:table;width:100%;min-width:520px}
+table.dt th{background:var(--bg2);color:var(--accent);text-align:left;padding:10px 12px;border:1px solid var(--line)}
+table.dt td{padding:10px 12px;border:1px solid var(--line);color:#cfc9e0;vertical-align:top}
+table.dt tr:nth-child(even) td{background:#191523}
+.note{background:#241d16;border:1px solid #4a3b22;border-left:4px solid var(--accent2);border-radius:10px;padding:14px 18px;margin:18px 0;font-size:14.5px;color:#e6d9bd}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:20px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;text-decoration:none;transition:transform .15s,border-color .15s;display:block}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.card h3{color:var(--text);font-size:16.5px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:13.5px;line-height:1.55}
+.card .go{color:var(--accent);font-size:12.5px;margin-top:8px;display:inline-block}
+.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;border:1px solid var(--line);margin:22px 0}
+.video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:0}
+.faq summary{cursor:pointer;padding:14px 18px;font-weight:600;font-size:15.5px;list-style:none}
+.faq summary::before{content:'+';color:var(--accent);margin-right:10px;font-weight:800}
+.faq details[open] summary::before{content:'−'}
+.faq details .a{padding:0 18px 16px;color:#cfc9e0;font-size:15px}
+.morelist{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.morelist a{background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:8px 14px;color:var(--muted);text-decoration:none;font-size:13.5px}
+.morelist a:hover{color:var(--accent);border-color:var(--accent)}
+footer{margin-top:60px;background:var(--bg2);border-top:1px solid var(--line);padding:30px 0 40px}
+footer p{color:var(--muted);font-size:13px;margin-bottom:6px}
+footer a{color:var(--muted);margin-right:16px;font-size:13px}
+footer a:hover{color:var(--accent)}
+@media (max-width:640px){
+header.top .wrap{flex-wrap:wrap;height:auto;padding:10px 20px;row-gap:6px}
+.logo{font-size:17px}
+nav{width:100%;display:flex;gap:16px;flex-wrap:wrap}
+nav a{margin-left:0;font-size:13px}
+.hero h1{font-size:26px}
+section.block h2{font-size:20px}
+table.dt{font-size:13px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="/">Dimraeth<b>Zone</b></a>
+<nav><a href="/classes/">Classes</a><a href="/races/">Races</a><a href="/best-class/">Best Class</a><a href="/pets/">Pets</a><a href="/spells/">Spells</a><a href="/map/">Map</a><a href="/builds/">Builds</a><a href="/beginner-guide/">Beginners</a></nav>
+</div></header>
+<main class="wrap">
+<div class="crumb"><a href="/">Home</a> &rsaquo; Crafting</div>
+
+<div class="hero">
+<h1>Dimraeth Crafting: <em>Stations, Recipes</em> &amp; Salvaging Explained</h1>
+<p class="lead">Community records document 48 recipes across four crafting stations — this page explains the system so those recipes actually make sense: where you craft, where materials come from, and why the forge eats your old gear.</p>
+<div class="badges"><span class="badge">Documented recipes: <b>48</b></span><span class="badge">Stations: <b>4</b></span><span class="badge">Key habit: <b>Salvage everything</b></span></div>
+</div>
+
+<div class="quick">
+<h2>Quick answer</h2>
+<p>Dimraeth crafting is a loop: <b>gather materials in the world → salvage old gear at the forge → craft at stations → build up your stronghold</b>. Community records document 48 recipes across four stations. The beginner-critical moves: don't vendor old gear (salvage it), stockpile Pinewood Planks early (the first real material gate), and cook — food buffs are the easiest power you're ignoring.</p>
+</div>
+
+<section class="block">
+<h2>How the crafting loop works</h2>
+<ul>
+<li><b>Gather:</b> wood, stone, ore, plants and drops come from specific regions — see the <a href="/map/" style="color:var(--accent)">map guide</a> for where each region sits.</li>
+<li><b>Salvage:</b> the forge breaks outdated weapons and armor down into crafting materials. Every level-up replaces gear, so salvaging is a steady material income — hoarding old gear is throwing away resources.</li>
+<li><b>Craft at stations:</b> each of the four stations covers a different family of recipes (smithing-style gear work, cooking, and processing among them). Recipes unlock as you progress and explore rather than being handed out at the start.</li>
+<li><b>Build:</b> crafted materials feed your stronghold — the base-building layer that unlocks after your first dungeon (see the <a href="/beginner-guide/" style="color:var(--accent)">beginner guide</a> for that unlock sequence).</li>
+</ul>
+</section>
+
+<section class="block">
+<h2>What to prioritize first</h2>
+<table class="dt">
+<tr><th>Priority</th><th>What</th><th>Why</th></tr>
+<tr><td><b>1</b></td><td>Pinewood Planks (Farmlands processing)</td><td>The community's most-reported early bottleneck — needed for the first round of base upgrades</td></tr>
+<tr><td><b>2</b></td><td>Cooked food</td><td>Cheap, stackable buffs; cooking ingredients are everywhere once you start looking</td></tr>
+<tr><td><b>3</b></td><td>Gear upgrades via salvage materials</td><td>Salvage converts dead inventory into the materials your next tier needs — pairs with the <a href="/builds/" style="color:var(--accent)">build guide</a></td></tr>
+<tr><td><b>4</b></td><td>Stronghold infrastructure</td><td>Storage and station upgrades pay compound interest over a whole playthrough</td></tr>
+</table>
+</section>
+
+<section class="block">
+<h2>Crafting in co-op</h2>
+<p>Crafting materials and station access live in the shared world, so a little house-keeping goes a long way: agree on who hoards what, label chests, and remember a <a href="/pets/" style="color:var(--accent)">pet</a> can ferry gathered loot back to base while everyone keeps adventuring. Groups that set up "dump chests" next to each station craft noticeably faster than groups with eight private stashes.</p>
+<div class="note"><b>Honesty box:</b> the 48-recipe / 4-station structure comes from community-maintained records checked in September 2026; per-recipe ingredient lists are still being verified by the community and change with EA patches. We deliberately publish the system-level guide first — the part that doesn't go stale — and will add recipe tables once the data settles.</div>
+</section>
+<section class="block faq"><h2>FAQ</h2><details><summary>How does crafting work in Dimraeth?</summary><div class='a'>Gather materials in the world, salvage old gear at the forge, then craft at four stations. Community records document 48 recipes in Early Access. Crafted materials also feed the stronghold base-building system.</div></details><details><summary>Should I sell or salvage old gear in Dimraeth?</summary><div class='a'>Salvage it at the forge. Salvaging converts outdated gear into crafting materials you'll need for your next tier — gold is easier to come by than materials.</div></details><details><summary>What is the first crafting bottleneck in Dimraeth?</summary><div class='a'>Pinewood Planks. Players consistently report them as the first material gate for early stronghold upgrades — they're processed in the Farmlands region, so stock up early.</div></details><details><summary>How many crafting recipes are in Dimraeth?</summary><div class='a'>Community records document 48 recipes across four crafting stations in Early Access, with more expected as EA content patches land.</div></details></section><section class="block"><h2>Keep Reading</h2><div class="morelist"><a href="/classes/">Classes</a><a href="/races/">Races</a><a href="/best-class/">Best Class</a><a href="/pets/">Pets</a><a href="/spells/">Spells</a><a href="/beginner-guide/">Beginner Guide</a><a href="/map/">Map</a><a href="/builds/">Builds</a><a href="/mods/">Mods</a><a href="/platforms/">Platforms</a><a href="/dedicated-server/">Servers</a><a href="/max-level/">Max Level</a><a href="/co-op/">Co-op</a><a href="/release-date/">Roadmap</a></div></section>
+</main>
+<footer><div class="wrap">
+<p><a href="/privacy/">Privacy Policy</a><a href="/about/">About</a><a href="https://store.steampowered.com/search/?term=Dimraeth" rel="nofollow noopener" target="_blank">Dimraeth on Steam</a></p>
+<p>DimraethZone is an unofficial fan-made guide site. Not affiliated with or endorsed by Mudtek. Dimraeth and all related marks are trademarks of their respective owners.</p>
+<p>&copy; 2026 dimraethzone.com</p>
+</div></footer>
+</body>
+</html>
